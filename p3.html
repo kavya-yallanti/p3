@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegistrationForm</title>
+    <style type=text/css>
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: whitesmoke;
+    color:white
+}
+h2{
+    text-align: center;
+    color:white;
+    
+}
+form{
+    padding: 20px;
+    height:750px;
+    border-radius: 5px;
+    margin-left: 400px;
+    margin-right: 400px;
+    background-color: rebeccapurple;
+
+}
+label{
+    display: block;
+    margin:1px;
+    font-weight: bold;
+}
+input[type=text],
+input[type=tel],
+input[type=email],
+input[type=password],
+textarea{
+    padding: 8px;
+    border:1px solid whitesmoke;
+    border-radius: 3px;
+    width: 100%;
+    margin-bottom: 2px;
+
+}
+select{
+    width:100%;
+    padding: 8px;
+    border:1px solid whitesmoke;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+input[type="submit"]{
+    color: aliceblue;
+    background-color:green;
+    cursor: pointer;
+
+}
+input[type="submit"]:hover{
+    background-color:blue;
+
+}
+.container{
+    width:400px;
+    margin: auto;
+    height: 700px;
+}
+    
+    </style>
+</head>
+<body>
+
+   
+    
+    <form>
+    <div  class="container">
+    <h2><u>RegistrationForm</u></h2>
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" required>
+    <br><br>
+
+     <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required>
+    <br><br>
+
+     <label for="Password">Password:</label>
+    <input type="password" name="password" id="password" required>
+    <br><br>
+
+     <label for="phnumber">Phno:</label>
+    <input type="number" name="phnumber" id="phnumber" required>
+    <br><br>
+
+     <label>Gender:</label>
+     <select id="gender">
+     <option value="male" name="male">Male</option>
+     <option value="female" name="female">Female</option>
+     <option value="others" name="others">Others</option>
+     </select>
+    <br><br>
+
+
+    <label>Language:</label>
+    <select id="language">
+    <option value="telugu" name="telugu">Telugu</option>
+    <option value="hindi" name="hindi">Hindi</option>
+    <option value="english" name="english">English</option>
+    </select>
+    <br><br>
+
+    <label for="zipcode">zipcode:</label>
+    <input type="text" name="zipcode" id="zipcode" required>
+
+    <br><br>
+
+    <label for="about">About:</label>
+    <textarea id="about" rows="5" cols="30"></textarea>
+
+    <br><br>
+    <div>
+    <input type="button" value="submit">
+    </div>
+    </form>   
+
+
+
+</body>
+</html>
